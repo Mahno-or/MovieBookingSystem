@@ -114,8 +114,8 @@
           <a href="H.php"><img class="logo" src = "Logo.png" alt="main"></a>
           <div class="titlebar">
             <a class="nav" href="H.php"><i class="fa fa-home"></i><textsize> Home</textsize></a>
-              <a class="nav" href="#"><i class="fa fa-star"></i><textsize> About Us</textsize></a>
-              <a class="nav" href="#"><i class="fa fa-phone"></i><textsize> Contact Us</textsize></a>
+              <a class="nav" href="AboutUs.html"><i class="fa fa-star"></i><textsize> About Us</textsize></a>
+              <a class="nav" href="ContactUs.php"><i class="fa fa-phone"></i><textsize> Contact Us</textsize></a>
           </div>
         </div>
         <div class="background">
@@ -135,10 +135,19 @@
               <div><input class="input" type="text" id="phone" name="phone" value ="<?php echo $phone ?>"  placeholder="Enter your phone number here.." ><p class="error"><?php echo $phoneErr; ?></p></input></div><br/>
             </div>
           </div>
-           
+          <div><p id= "warning">Please make sure your details are correct, they can't be changed afterwards!</p></div> 
           <input type = "submit" value = "Submit" class= "sub" name ="submit"></input>
 
         </form>
       </div></div>
     </body>
+    <script type="text/javascript"> 
+        function preventBack() { 
+            window.history.forward();  
+        } 
+          
+        setTimeout("preventBack()", 0); 
+          
+        window.onunload = function () { null }; 
+    </script> 
 </html>

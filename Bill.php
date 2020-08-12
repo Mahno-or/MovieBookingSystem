@@ -25,20 +25,17 @@
         $newSeats = $_SESSION["newseats"];
         $q = $_SESSION['id'];
         $sql2 = "UPDATE Movies SET seats='$newSeats' WHERE id='$q'";
-        if ($con->query($sql2) === TRUE) {
-            echo "Record updated successfully";
-        } else {
+        if ($con->query($sql2) === FALSE) {
             echo "Error updating record: " . $con->error;
-        }
+        } 
       }
       else{
         echo "Error: " . $sql . "<br>" . mysqli_error($con);
-      }
-
-       
+      }  
 
 
 mysqli_close($con);
+
 
 ?>
 <html lang="en">
