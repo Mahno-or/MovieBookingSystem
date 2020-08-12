@@ -38,6 +38,7 @@ mysqli_close($con);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Timings</title>
 </head>
+
     <div class="main">
       <a href="Home.php"><img class="logo" src = "Logo.png" alt="main"></a>
       <div class="titlebar">
@@ -46,6 +47,7 @@ mysqli_close($con);
           <a class="nav" href="ContactUs.html"><i class="fa fa-phone"></i><textsize> Contact Us</textsize></a>
         </div>
     </div>
+<body>
 <div class = "bg">
     <div class = "background">
     <div class = "movie">
@@ -101,4 +103,5 @@ mysqli_close($con);
       </form>
 </div>
 </div>
+</body>
 </html>
